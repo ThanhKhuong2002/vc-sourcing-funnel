@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; background: Canvas; color: CanvasText; }
+main { max-width: 1100px; margin: auto; padding: 2rem 1rem; }
+header, footer { border-bottom: 1px solid color-mix(in srgb, CanvasText 18%, transparent); padding-bottom: 1rem; }
+footer { border-top: 1px solid color-mix(in srgb, CanvasText 18%, transparent); border-bottom: 0; margin-top: 2rem; padding-top: 1rem; color: GrayText; }
+.controls { display: flex; gap: 1rem; flex-wrap: wrap; align-items: end; margin: 1.5rem 0; }
+label { display: grid; gap: .4rem; font-weight: 600; }
+select, button, input { font: inherit; padding: .5rem; }
+button { cursor: pointer; }
+.pipeline { display: grid; grid-template-columns: minmax(260px, .75fr) minmax(0, 1.25fr); gap: 1.5rem; }
+.company { width: 100%; display: flex; justify-content: space-between; align-items: center; text-align: left; margin: .5rem 0; border: 1px solid color-mix(in srgb, CanvasText 20%, transparent); background: transparent; }
+.company small { display: block; color: GrayText; margin-top: .25rem; }
+.selected { outline: 3px solid Highlight; outline-offset: 1px; }
+#detail { padding: 1rem 1.25rem; background: color-mix(in srgb, Canvas 90%, CanvasText); border: 1px solid color-mix(in srgb, CanvasText 18%, transparent); }
+dl { display: grid; gap: .75rem; } dl div { display: grid; grid-template-columns: 7rem 1fr; } dt { font-weight: 600; } dd { margin: 0; }
+pre { white-space: pre-wrap; font: inherit; }
+@media (max-width: 720px) { .pipeline { grid-template-columns: 1fr; } }

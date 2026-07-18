@@ -1,0 +1,23 @@
+[
+  {
+    "id": "iterative",
+    "name": "Iterative - Companies",
+    "url": "https://www.iterative.vc/companies",
+    "enabled": true,
+    "rateLimitMs": 3000
+  },
+  {
+    "id": "plugandplay",
+    "name": "Plug and Play APAC - Startup directory",
+    "url": "https://www.plugandplayapac.com/our-startups",
+    "enabled": true,
+    "rateLimitMs": 3000
+  },
+  {
+    "id": "unikorn",
+    "name": "Unikorn - AI and automation",
+    "url": "https://unikorn.vn/categories/ai-automation",
+    "enabled": true,
+    "rateLimitMs": 3000
+  }
+]

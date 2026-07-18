@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VC Sourcing Funnel</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main>
+      <header><h1>VC Sourcing Funnel</h1><p>Public-source research, human-reviewed outreach, and preliminary memos.</p></header>
+      <section class="controls" aria-label="Pipeline controls">
+        <label>Approved source <select id="source"></select></label>
+        <label>Minimum score <output id="thresholdValue">70</output><input id="threshold" type="range" min="40" max="90" value="70"></label>
+        <button id="scan">Run scan</button>
+      </section>
+      <p id="status" role="status">Loading tested seed records.</p>
+      <section class="pipeline"><div><h2>Qualified startups</h2><div id="companies"></div></div><article id="detail"><h2>Choose a startup</h2></article></section>
+      <footer>Draft-only workflow: no emails are sent by this application.</footer>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
